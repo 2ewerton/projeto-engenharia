@@ -1,1 +1,113 @@
-awdasdwasd
+projeto engenharia 
+
+https://github.com/2ewerton/projeto-engenharia.git
+
+membros: Ewerton Vinicius; Lucas Matias; Lucas Sousa
+
+ 1 - Etapa Conceitual
+O que é controle de versões e por que ele é importante:
+ O controle de versões é um sistema que registra todas as alterações feitas em um projeto ao longo do tempo. Ele permite voltar a versões anteriores, comparar mudanças, identificar quem fez cada modificação e trabalhar em equipe sem perder dados. É importante porque evita perda de arquivos, facilita o trabalho colaborativo e organiza o histórico de desenvolvimento do software.
+Diferença entre Git e GitHub:
+ O Git é uma ferramenta local de controle de versões, usada diretamente no computador. Já o GitHub é uma plataforma online onde os repositórios criados com o Git podem ser armazenados e compartilhados.
+ Resumindo: Git é a ferramenta, e GitHub é o site que hospeda os projetos criados com ela.
+Principais vantagens de utilizar controle de versões:
+Histórico completo de mudanças.
+Possibilidade de reverter erros.
+Trabalho colaborativo sem conflito de arquivos.
+Integração com plataformas como GitHub ou GitLab.
+Segurança e backup do projeto.
+
+
+Comandos básicos do Git e o que fazem:
+git init → Inicia o controle de versões em uma pasta.
+git status → Mostra o estado atual do repositório (quais arquivos foram alterados ou adicionados).
+git add . → Adiciona arquivos ao controle (prepara os arquivos para serem salvos).
+git commit -m "mensagem" → Salva uma nova versão do projeto com uma mensagem de identificação.
+git log → Mostra o histórico de todas as versões salvas.
+git remote add origin <url> → Conecta o projeto local a um repositório no GitHub.
+git push -u origin main → Envia os arquivos locais para o repositório online.
+git pull → Atualiza o projeto local com a versão mais recente do GitHub.
+
+2 - Preparação do ambiente:
+O git já estava funcionando no computador
+todos os membros já tinham uma conta no GitHub
+Fomos ao GitHub e fizemos o login. em “New” Demos o nome ao repositório e escolhemos o público adicionamos  README. e criamos o GitHub.
+3 – Criação do Projeto Local
+Para iniciar o projeto, foi criada uma pasta chamada “meu-primeiro-repositorio”. Dentro dela, criamos um arquivo inicial chamado “index.html”, com uma mensagem simples identificando o grupo e o propósito do projeto.
+Exemplo de conteúdo do arquivo:
+<h1>Meu Primeiro Repositório</h1>
+<p>Grupo: [Lucas Matias, Lucas sousa, Ewerton Vinicius ]</p>
+<p>Mensagem: Nosso primeiro projeto versionado com Git!</p>
+
+Em seguida, abrimos o terminal dentro da pasta e iniciamos o controle de versões com o comando:
+git init
+
+👉 Esse comando cria um repositório Git local, permitindo que o sistema comece a registrar todas as alterações feitas no projeto.
+Depois, adicionamos o arquivo ao controle de versões:
+git add index.html
+
+👉 Aqui o arquivo foi preparado para o primeiro registro (commit).
+Por fim, registramos a primeira versão com:
+git commit -m "Primeiro commit: criação do arquivo inicial"
+
+👉 Esse passo salva oficialmente o estado atual do projeto, criando o primeiro ponto do histórico de versões.
+Resumo da Etapa 3:
+Etapa
+Significado no controle de versões
+Criar pasta e arquivo
+Início do projeto e criação do conteúdo inicial
+git init
+Inicia o versionamento com o Git
+git add
+Prepara arquivos para o commit
+git commit
+Cria uma versão registrada do projeto
+
+
+4 – Evolução do Projeto
+Para simular a evolução do projeto, o arquivo index.html foi editado, adicionando novas informações e melhorias.
+ Também foi criado um segundo arquivo, “anotacoes.txt”, com observações sobre o desenvolvimento.
+Após as modificações, os novos arquivos e alterações foram salvos no Git com os seguintes comandos:
+git add .
+git commit -m "Atualização: melhorias no index e criação do arquivo de anotações"
+
+👉 O git add . adiciona todas as mudanças (novos arquivos e edições) ao controle de versões, enquanto o git commit cria uma nova versão do projeto com as atualizações feitas.
+Esses passos representam a evolução natural do código, permitindo acompanhar o progresso, comparar versões e, se necessário, retornar a estados anteriores do projeto.
+Resumo da Etapa 4:
+Etapa
+Função no controle de versões
+Editar arquivos
+Realizar melhorias e evoluções no projeto
+Criar novo arquivo
+Adicionar novos conteúdos ao projeto
+git add .
+Preparar todas as mudanças para o commit
+git commit
+Registrar uma nova versão com as atualizações
+
+
+5 - Publicando no GitHub:
+No VS Code:
+clonei direto do GitHub e mandei para o Vscode
+Projeto publicado em: https://github.com/2ewerton/projeto-engenharia.git
+
+
+
+
+6 – Desafio Extra
+Branch é uma ramificação do projeto que permite criar uma cópia do código principal para testar, corrigir erros ou desenvolver novas funções sem alterar a versão original.
+Para usar:
+Criar uma branch → git checkout -b nome-da-branch
+
+
+Fazer alterações e salvar → git add . e git commit -m "mensagem"
+
+
+Voltar à principal → git checkout main
+
+
+Juntar as mudanças → git merge nome-da-branch
+
+
+Esse recurso é muito útil em projetos colaborativos, pois cada pessoa pode trabalhar em partes diferentes do código ao mesmo tempo, mantendo o projeto organizado e evitando conflitos.
+
